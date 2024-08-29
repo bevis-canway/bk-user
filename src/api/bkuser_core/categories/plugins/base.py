@@ -269,7 +269,7 @@ class Syncer:
         # 清除人员上级关系
         LeaderThroughModel.objects.filter(from_profile_id__in=disabling_profiles).delete()
         # 禁用人员
-        Profile.objects.filter(id__in=disabling_profiles).update(enabled=False)
+        Profile.objects.filter(id__in=disabling_profiles).update(enabled=False, status=ProfileStatus.DISABLED.value)
 
     def try_to_add_profile_department_relation(self, profile: Profile, department: Department):
         relation_params = {"profile": profile, "department": department}
