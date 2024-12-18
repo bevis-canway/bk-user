@@ -22,12 +22,13 @@ APP_TOKEN = "__BK_USERMGR_APP_SECRET__"
 # 数据库配置信息
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",  # 默认用mysql
+        "ENGINE": "django_dmPython",  # 默认用mysql
         "NAME": "bk_user",
         "USER": "__BK_USERMGR_MYSQL_USER__",
         "PASSWORD": "__BK_USERMGR_MYSQL_PASSWORD__",
         "HOST": "__BK_USERMGR_MYSQL_HOST__",
         "PORT": "__BK_USERMGR_MYSQL_PORT__",
+        "OPTIONS": {"schema": "bk_user"},  # 适配dm
     }
 }
 

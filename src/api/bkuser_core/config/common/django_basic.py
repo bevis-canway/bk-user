@@ -58,6 +58,7 @@ MIDDLEWARE = [
 INSTALLED_APPS = [
     "drf_yasg",
     "django.contrib.auth",
+    "cw_cornerstone.migrate_patch",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.sites",
@@ -83,6 +84,9 @@ INSTALLED_APPS = [
     # apigateway sdk
     "apigw_manager.apigw",
 ]
+
+# migration 补丁的包目录
+REPLACE_MIGRATION_MODULE_PATH = "migrate_patch.patches"
 
 # ==============================================================================
 # Django 时区 & 国际化配置

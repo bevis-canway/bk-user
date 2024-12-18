@@ -15,7 +15,6 @@ from enum import auto
 from threading import RLock
 from typing import Any, ClassVar, List, Optional, Type
 
-from django.conf import settings
 from django.db import connections, models
 
 from bkuser_core.common.enum import AutoLowerEnum
@@ -41,7 +40,6 @@ class SyncModelMeta:
     table_name: ClassVar[str]
     is_relation_table: bool = False
     pk_field: str = "id"
-    table_schema: str = settings.DATABASES["default"]["NAME"]
     update_exclude_fields: List = []
     use_bulk: bool = True
     # TODO: support unique_together
@@ -130,11 +128,15 @@ class SyncModelManager:
     def get_latest_auto_id(self) -> int:
         """找到最大的自增 id"""
         with connections["default"].cursor() as cursor:
-            cursor.execute(
-                "SELECT `AUTO_INCREMENT` "
-                "FROM  INFORMATION_SCHEMA.TABLES "
-                "WHERE TABLE_NAME = '{}' and TABLE_SCHEMA = '{}';".format(self.meta.table_name, self.meta.table_schema)
-            )
+            # cursor.execute(
+            #     "SELECT `AUTO_INCREMENT` "
+            #     "FROM  INFORMATION_SCHEMA.TABLES "
+            #     "WHERE TABLE_NAME = '%s';" % self.meta.table_name
+            # )
+            max_id_sql = f"""
+            select MAX(ID) from {self.meta.table_name}
+            """
+            cursor.execute(max_id_sql)
             all_value = cursor.fetchall()
             all_value = [v[0] for v in all_value]
             return max(all_value)
@@ -217,55 +219,62 @@ class SyncModelManager:
         total_fail_count = 0
         total_fail_records = []
         slices = self.make_slices(items)
-        for idx, part in enumerate(slices):
-            logger.info(
-                "======== Syncing part of %s(%s/%s) current: %d + %d =========",
-                target_model_name,
-                idx + 1,
-                len(slices),
-                current_count,
-                len(part),
-            )
-            current_count = current_count + len(part)
-            # NOTE: 批量插入失败, 会导致整体同步任务失败
-            # - 优化: 批量插入失败, 切换成单条插入
-            # - 优化: 单条插入失败, continue (会打详细日志)
-            try:
-                getattr(getattr(self.meta.target_model, manager), method)(part, **extra_params)
-            except Exception:
-                logger.warning(
-                    "%s %s failed, count=%d, extra_params=%s, will try to sync one by one",
+        with connections["default"].cursor() as cursor:
+            # dm-fit: 设置这个表的自增列可编辑
+            dm_sql = f"""
+                           SET IDENTITY_INSERT {self.meta.table_name} ON
+                       """
+            logger.info(f"set IDENTITY_INSERT=on for {self.meta.table_name}")
+            cursor.execute(dm_sql)
+            for idx, part in enumerate(slices):
+                logger.info(
+                    "======== Syncing part of %s(%s/%s) current: %d + %d =========",
+                    target_model_name,
+                    idx + 1,
+                    len(slices),
+                    current_count,
+                    len(part),
+                )
+                current_count = current_count + len(part)
+                # NOTE: 批量插入失败, 会导致整体同步任务失败
+                # - 优化: 批量插入失败, 切换成单条插入
+                # - 优化: 单条插入失败, continue (会打详细日志)
+                try:
+                    getattr(getattr(self.meta.target_model, manager), method)(part, **extra_params)
+                except Exception:
+                    logger.warning(
+                        "%s %s failed, count=%d, extra_params=%s, will try to sync one by one",
+                        target_model_name,
+                        method,
+                        len(part),
+                        extra_params,
+                    )
+                    for one in part:
+                        try:
+                            one.save()
+                            continue
+                        except Exception:
+                            total_fail_count += 1
+                            logger.exception(
+                                "%s %s: save one by one fail, item=%s, will not be updated, detail=%s",
+                                target_model_name,
+                                method,
+                                one,
+                                vars(one),
+                            )
+                            total_fail_records.append(one)
+                            continue
+                    # 原先的逻辑: raise
+                    # raise
+            if total_fail_count > 0:
+                logger.error(
+                    "%s %s failed, total_fail_count=%d, total_fail_records=%s",
                     target_model_name,
                     method,
-                    len(part),
-                    extra_params,
+                    total_fail_count,
+                    total_fail_records,
                 )
-                for one in part:
-                    try:
-                        one.save()
-                        continue
-                    except Exception:
-                        total_fail_count += 1
-                        logger.exception(
-                            "%s %s: save one by one fail, item=%s, will not be updated, detail=%s",
-                            target_model_name,
-                            method,
-                            one,
-                            vars(one),
-                        )
-                        total_fail_records.append(one)
-                        continue
-                # 原先的逻辑: raise
-                # raise
-        if total_fail_count > 0:
-            logger.error(
-                "%s %s failed, total_fail_count=%d, total_fail_records=%s",
-                target_model_name,
-                method,
-                total_fail_count,
-                total_fail_records,
-            )
-            logger.info("======== %s synced. and got %d fail ✅ ========", target_model_name, total_fail_count)
-            # TODO: should do something to let the admin know some record fail!
-        else:
-            logger.info("======== %s synced. ✅ ========", target_model_name)
+                logger.info("======== %s synced. and got %d fail ✅ ========", target_model_name, total_fail_count)
+                # TODO: should do something to let the admin know some record fail!
+            else:
+                logger.info("======== %s synced. ✅ ========", target_model_name)

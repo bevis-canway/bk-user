@@ -144,8 +144,11 @@ class DepartmentViewSet(AdvancedModelViewSet, AdvancedListAPIView):
         # 直接在 DB 中拼接 username & domain，比在 serializer 中快很多
         # default_domain = ProfileCategory.objects.get_default().domain
         default_domain = get_default_category_domain_from_local_cache()
+        concat_username_sql = """
+                    if("domain"= %s,  "username", CONCAT("username", '@', "domain"))
+                    """
         profiles = profiles.extra(
-            select={"username": "if(`domain`= %s, username, CONCAT(username, '@', domain))"},
+            select={"username": concat_username_sql},
             select_params=(default_domain,),
         )
 

@@ -7,7 +7,7 @@ RUN rm /etc/apt/sources.list && \
     echo "deb-src https://mirrors.cloud.tencent.com/debian buster main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb-src https://mirrors.cloud.tencent.com/debian buster-updates main contrib non-free" >> /etc/apt/sources.list
 
-RUN mkdir ~/.pip &&  printf '[global]\nindex-url = https://mirrors.tencent.com/pypi/simple/' > ~/.pip/pip.conf
+RUN mkdir ~/.pip &&  printf '[global]\nindex-url = https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple' > ~/.pip/pip.conf
 
 RUN apt-get update && apt-get install -y gcc gettext
 
@@ -16,7 +16,7 @@ ENV LC_ALL=C.UTF-8 \
 
 RUN pip install --upgrade pip setuptools
 RUN pip install poetry==1.1.13
-RUN poetry config repositories.pypi https://mirrors.tencent.com/pypi/simple/
+RUN poetry config repositories.pypi https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple
 
 # for saml 2.0 custom login
 RUN apt-get install -y pkg-config libxml2-dev libxmlsec1-dev libxmlsec1-openssl

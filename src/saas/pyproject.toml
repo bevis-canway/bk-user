@@ -30,6 +30,8 @@ werkzeug = "2.0.3"
 packaging = "21.0"
 pyparsing = "2.4.7"
 cffi = "1.15.1"
+django-dmpython = "^3.1.7"
+dmpython = "^2.5.5"
 opentelemetry-instrumentation-django = "0.27b0"
 opentelemetry-instrumentation-dbapi = "0.27b0"
 opentelemetry-instrumentation-redis = "0.27b0"
@@ -41,6 +43,7 @@ opentelemetry-sdk = "1.8.0"
 opentelemetry-exporter-otlp = "1.8.0"
 opentelemetry-exporter-jaeger = "1.8.0"
 concurrent-log-handler = "^0.9.25"
+cw-cornerstone = "^0.5.8"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.15.0"
@@ -63,6 +66,9 @@ types-dataclasses = "^0.1.5"
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "bkuser_shell.config.overlays.dev"
 
+[[tool.poetry.source]]
+name = "kingeye-pypi"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
 
 [[tool.poetry.source]]
 name = "default"

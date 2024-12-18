@@ -12,6 +12,7 @@ import datetime
 from typing import List
 from uuid import uuid4
 
+import jsonfield
 from django.db import models
 from django.utils import timezone
 from django_celery_beat.models import PeriodicTask
@@ -208,4 +209,5 @@ class SyncProgress(TimestampedModel):
 class SyncProgressLog(TimestampedModel):
     progress = models.OneToOneField(SyncProgress, on_delete=models.CASCADE, related_name="log")
     logs = models.TextField(verbose_name="日志")
-    failed_records = models.JSONField(default=list)
+    # failed_records = models.JSONField(default=list)
+    failed_records = jsonfield.JSONField(default=[])

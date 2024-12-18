@@ -189,8 +189,11 @@ class ProfileViewSet(AdvancedModelViewSet, AdvancedListAPIView):
             # default_domain = ProfileCategory.objects.get_default().domain
             default_domain = get_default_category_domain_from_local_cache()
             # 这里拼装的 username@domain, 没有走到serializer中的get_username
+            concat_username_sql = """
+                    if("domain"= %s,  "username", CONCAT("username", '@', "domain"))
+                    """
             queryset = queryset.extra(
-                select={"username": "if(`domain`= %s, username, CONCAT(username, '@', domain))"},
+                select={"username": concat_username_sql},
                 select_params=(default_domain,),
             )
 
