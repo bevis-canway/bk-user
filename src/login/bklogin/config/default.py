@@ -148,7 +148,6 @@ JS_SUFFIX = "min.js"
 # ************************************ storage settings ************************************
 # 数据库
 DATABASES = get_db_config(env, "DATABASE")
-
 # 缓存
 CACHES = {
     "default": {

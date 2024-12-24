@@ -11,8 +11,8 @@ contextvars = {version = "2.4", markers = "python_version < \"3.7\""}
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "appnope"
@@ -24,8 +24,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "asgiref"
@@ -43,8 +43,24 @@ tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "async-timeout"
+version = "4.0.2"
+description = "Timeout context manager for asyncio programs"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+typing-extensions = {version = ">=3.6.5", markers = "python_version < \"3.8\""}
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "atomicwrites"
@@ -56,8 +72,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "attrs"
@@ -75,8 +91,8 @@ tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "backcall"
@@ -88,8 +104,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "backoff"
@@ -101,8 +117,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "bk-crypto-python-sdk"
@@ -120,8 +136,8 @@ wrapt = ">=1.15.0,<2.0.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "bk-iam"
@@ -139,8 +155,8 @@ six = ">=1.11.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "black"
@@ -169,8 +185,8 @@ uvloop = ["uvloop (>=0.15.2)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "blue-krill"
@@ -197,8 +213,8 @@ watchdog = ">=1.0.2,<2.0.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "cachetools"
@@ -210,8 +226,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "certifi"
@@ -223,8 +239,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "cffi"
@@ -239,8 +255,8 @@ pycparser = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "charset-normalizer"
@@ -255,8 +271,8 @@ unicode_backport = ["unicodedata2"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "click"
@@ -272,8 +288,8 @@ importlib-metadata = {version = "*", markers = "python_version < \"3.8\""}
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "colorama"
@@ -285,8 +301,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "concurrent-log-handler"
@@ -301,8 +317,8 @@ portalocker = ">=1.6.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "contextvars"
@@ -317,8 +333,8 @@ immutables = ">=0.9"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "coverage"
@@ -333,8 +349,8 @@ toml = ["tomli"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "cryptography"
@@ -359,8 +375,8 @@ tox = ["tox"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "curlify"
@@ -375,8 +391,36 @@ requests = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "cw-cornerstone"
+version = "0.5.8"
+description = "-"
+category = "main"
+optional = false
+python-versions = ">=3.6.2,<4.0"
+
+[package.dependencies]
+dataclasses = {version = ">=0.6.0", markers = "python_full_version < \"3.7.0\""}
+dj-database-url = "*"
+django-health-check = ">=3.16.5"
+django-redis = "*"
+elasticsearch = ">=7.0.0,<8.0.0"
+kafka-python = ">=1.4.6"
+typing-extensions = ">=3.6"
+
+[package.extras]
+dameng = ["django (>=2.2)", "django-dmpython (>=3.1.7,<4.0.0)", "dmpython (>=2.5.5,<3.0.0)"]
+gaussdb = ["django (>=2.2)", "psycopg2 (>=2.9.0,<3.0.0)"]
+oceanbase = ["django (>=2.2)", "mysqlclient (>=2.1.1,<3.0.0)"]
+ci = ["django (>=2.2)"]
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "dacite"
@@ -394,8 +438,8 @@ dev = ["pytest (>=5)", "pytest-benchmark", "pytest-cov", "coveralls", "black", "
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "dataclasses"
@@ -407,8 +451,8 @@ python-versions = ">=3.6, <3.7"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "decorator"
@@ -420,8 +464,8 @@ python-versions = ">=3.5"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "deprecated"
@@ -439,8 +483,25 @@ dev = ["tox", "bump2version (<1)", "sphinx (<2)", "importlib-metadata (<3)", "im
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "dj-database-url"
+version = "2.2.0"
+description = "Use Database URLs in your Django Application."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Django = ">=3.2"
+typing-extensions = ">=3.10.0.0"
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "dj-static"
@@ -455,8 +516,8 @@ static3 = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "django"
@@ -477,8 +538,8 @@ bcrypt = ["bcrypt"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "django-braces"
@@ -490,8 +551,21 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "django-dmpython"
+version = "3.1.7"
+description = "Dameng database backend for Django"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "django-environ"
@@ -508,8 +582,24 @@ testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "django-health-check"
+version = "3.16.5"
+description = "Run checks on services like databases, queue servers, celery processes, etc."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+django = ">=2.2"
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "django-prometheus"
@@ -524,8 +614,64 @@ prometheus-client = ">=0.7"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "django-redis"
+version = "5.4.0"
+description = "Full featured redis cache backend for Django."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+Django = ">=3.2"
+redis = ">=3,<4.0.0 || >4.0.0,<4.0.1 || >4.0.1"
+
+[package.extras]
+hiredis = ["redis[hiredis] (>=3,!=4.0.0,!=4.0.1)"]
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "dmpython"
+version = "2.5.5"
+description = "Python interface to Dameng"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "elasticsearch"
+version = "7.17.9"
+description = "Python client for Elasticsearch"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4"
+
+[package.dependencies]
+certifi = "*"
+urllib3 = ">=1.21.1,<2"
+
+[package.extras]
+async = ["aiohttp (>=3,<4)"]
+develop = ["requests (>=2.0.0,<3.0.0)", "coverage", "mock", "pyyaml", "pytest", "pytest-cov", "sphinx (<1.7)", "sphinx-rtd-theme", "black", "jinja2"]
+docs = ["sphinx (<1.7)", "sphinx-rtd-theme"]
+requests = ["requests (>=2.4.0,<3.0.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "flake8"
@@ -543,8 +689,8 @@ pyflakes = ">=2.4.0,<2.5.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "flake8-comprehensions"
@@ -560,8 +706,8 @@ importlib-metadata = {version = "*", markers = "python_version < \"3.8\""}
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "gevent"
@@ -586,8 +732,8 @@ test = ["requests", "objgraph", "cffi (>=1.12.2)", "dnspython (>=1.16.0,<2.0)", 
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "googleapis-common-protos"
@@ -605,8 +751,8 @@ grpc = ["grpcio (>=1.0.0,<2.0.0dev)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "greenlet"
@@ -622,8 +768,8 @@ test = ["objgraph", "psutil"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "grpcio"
@@ -641,8 +787,8 @@ protobuf = ["grpcio-tools (>=1.48.2)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "gunicorn"
@@ -659,8 +805,8 @@ tornado = ["tornado (>=0.2)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "idna"
@@ -672,8 +818,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "immutables"
@@ -691,8 +837,8 @@ test = ["flake8 (>=3.8.4,<3.9.0)", "pycodestyle (>=2.6.0,<2.7.0)", "mypy (==0.94
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "importlib-metadata"
@@ -712,8 +858,8 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "iniconfig"
@@ -725,8 +871,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "ipython"
@@ -761,8 +907,8 @@ test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipyk
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "ipython-genutils"
@@ -774,8 +920,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "isort"
@@ -793,8 +939,8 @@ plugins = ["setuptools"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "jedi"
@@ -813,8 +959,24 @@ testing = ["Django (<3.1)", "colorama", "docopt", "pytest (>=3.9.0,<5.0.0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "kafka-python"
+version = "2.0.2"
+description = "Pure Python client for Apache Kafka"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+crc32c = ["crc32c"]
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "mccabe"
@@ -826,8 +988,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "mypy"
@@ -849,8 +1011,8 @@ python2 = ["typed-ast (>=1.4.0,<1.5.0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "mypy-extensions"
@@ -862,8 +1024,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-api"
@@ -879,8 +1041,8 @@ Deprecated = ">=1.2.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-exporter-jaeger"
@@ -896,8 +1058,8 @@ opentelemetry-exporter-jaeger-thrift = "1.8.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-exporter-jaeger-proto-grpc"
@@ -915,8 +1077,8 @@ opentelemetry-sdk = ">=1.3,<2.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-exporter-jaeger-thrift"
@@ -933,8 +1095,8 @@ thrift = ">=0.10.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-exporter-otlp"
@@ -950,8 +1112,8 @@ opentelemetry-exporter-otlp-proto-http = "1.8.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-exporter-otlp-proto-grpc"
@@ -974,8 +1136,8 @@ test = ["pytest-grpc"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-exporter-otlp-proto-http"
@@ -995,8 +1157,8 @@ requests = ">=2.7,<3.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation"
@@ -1012,8 +1174,8 @@ wrapt = ">=1.0.0,<2.0.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-celery"
@@ -1034,8 +1196,8 @@ test = ["pytest", "opentelemetry-test-utils (==0.27b0)", "celery (>=4.0,<6.0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-dbapi"
@@ -1056,8 +1218,8 @@ test = ["opentelemetry-test-utils (==0.27b0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-django"
@@ -1081,8 +1243,8 @@ test = ["opentelemetry-test-utils (==0.27b0)", "django (>=1.10)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-logging"
@@ -1101,8 +1263,8 @@ test = ["opentelemetry-test-utils (==0.27b0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-redis"
@@ -1124,8 +1286,8 @@ test = ["opentelemetry-test-utils (==0.27b0)", "opentelemetry-sdk (>=1.3,<2.0)",
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-requests"
@@ -1147,8 +1309,8 @@ test = ["opentelemetry-test-utils (==0.27b0)", "httpretty (>=1.0,<2.0)", "reques
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-instrumentation-wsgi"
@@ -1169,8 +1331,8 @@ test = ["opentelemetry-test-utils (==0.27b0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-proto"
@@ -1185,8 +1347,8 @@ protobuf = ">=3.13.0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-sdk"
@@ -1202,8 +1364,8 @@ opentelemetry-semantic-conventions = "0.27b0"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-semantic-conventions"
@@ -1215,8 +1377,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "opentelemetry-util-http"
@@ -1228,14 +1390,14 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "packaging"
 version = "21.3"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -1244,8 +1406,8 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "parso"
@@ -1260,8 +1422,8 @@ testing = ["docopt", "pytest (>=3.0.7)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pathspec"
@@ -1273,8 +1435,8 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pexpect"
@@ -1289,8 +1451,8 @@ ptyprocess = ">=0.5"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pickleshare"
@@ -1302,8 +1464,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "platformdirs"
@@ -1319,8 +1481,8 @@ test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock 
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pluggy"
@@ -1339,8 +1501,8 @@ testing = ["pytest", "pytest-benchmark"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "portalocker"
@@ -1360,8 +1522,8 @@ tests = ["pytest (>=5.4.1)", "pytest-cov (>=2.8.1)", "pytest-timeout (>=2.1.0)",
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "prometheus-client"
@@ -1376,8 +1538,8 @@ twisted = ["twisted"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "prompt-toolkit"
@@ -1392,8 +1554,8 @@ wcwidth = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "protobuf"
@@ -1405,8 +1567,8 @@ python-versions = ">=3.5"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "ptyprocess"
@@ -1418,8 +1580,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "py"
@@ -1431,8 +1593,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pyasn1"
@@ -1444,8 +1606,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pycodestyle"
@@ -1457,8 +1619,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pycparser"
@@ -1470,8 +1632,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pycryptodome"
@@ -1483,8 +1645,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pycryptodomex"
@@ -1496,8 +1658,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pydantic"
@@ -1517,8 +1679,8 @@ email = ["email-validator (>=1.0.3)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pyflakes"
@@ -1530,8 +1692,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pygments"
@@ -1543,8 +1705,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pyjwt"
@@ -1562,8 +1724,8 @@ tests = ["pytest (>=6.0.0,<7.0.0)", "coverage[toml] (==5.0.4)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pymysql"
@@ -1579,14 +1741,14 @@ rsa = ["cryptography"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pyparsing"
 version = "3.0.9"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6.8"
 
@@ -1595,8 +1757,8 @@ diagrams = ["railroad-diagrams", "jinja2"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pyproject-flake8"
@@ -1612,8 +1774,8 @@ tomli = {version = "*", markers = "python_version < \"3.11\""}
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pytest"
@@ -1639,8 +1801,8 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xm
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pytest-cov"
@@ -1660,8 +1822,8 @@ testing = ["fields", "hunter", "process-tests", "six", "pytest-xdist", "virtuale
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pytest-django"
@@ -1680,8 +1842,8 @@ testing = ["django", "django-configurations (>=2.0)", "six"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "python-dateutil"
@@ -1696,8 +1858,8 @@ six = ">=1.5"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "python-editor"
@@ -1709,8 +1871,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "python-json-logger"
@@ -1722,8 +1884,8 @@ python-versions = ">=3.5"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pytz"
@@ -1735,8 +1897,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "pywin32"
@@ -1748,8 +1910,31 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
+
+[[package]]
+name = "redis"
+version = "4.3.6"
+description = "Python client for Redis database and key-value store"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+async-timeout = ">=4.0.2"
+importlib-metadata = {version = ">=1.0", markers = "python_version < \"3.8\""}
+packaging = ">=20.4"
+typing-extensions = {version = "*", markers = "python_version < \"3.8\""}
+
+[package.extras]
+hiredis = ["hiredis (>=1.0.0)"]
+ocsp = ["cryptography (>=36.0.1)", "pyopenssl (==20.0.1)", "requests (>=2.26.0)"]
+
+[package.source]
+type = "legacy"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "requests"
@@ -1771,8 +1956,8 @@ use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "rsa"
@@ -1787,8 +1972,8 @@ pyasn1 = ">=0.1.3"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "sentry-sdk"
@@ -1822,8 +2007,8 @@ tornado = ["tornado (>=5)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "six"
@@ -1835,8 +2020,8 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "sqlparse"
@@ -1853,8 +2038,8 @@ test = ["pytest", "pytest-cov"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "static3"
@@ -1870,8 +2055,8 @@ KidMagic = ["kid"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "thrift"
@@ -1891,8 +2076,8 @@ twisted = ["twisted"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "toml"
@@ -1904,8 +2089,8 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "tomli"
@@ -1917,8 +2102,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "tongsuopy-crayon"
@@ -1937,8 +2122,8 @@ test = ["pytest (>=6.2.0)", "pytest-benchmark", "pytest-cov", "pytest-subtests",
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "traitlets"
@@ -1958,8 +2143,8 @@ test = ["pytest", "mock"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "typed-ast"
@@ -1971,8 +2156,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "typing-extensions"
@@ -1984,8 +2169,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "urllib3"
@@ -2002,8 +2187,8 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "watchdog"
@@ -2018,8 +2203,8 @@ watchmedo = ["PyYAML (>=3.10)", "argh (>=0.24.1)"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "wcwidth"
@@ -2031,8 +2216,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "werkzeug"
@@ -2050,8 +2235,8 @@ watchdog = ["watchdog"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "wrapt"
@@ -2063,8 +2248,8 @@ python-versions = ">=3.6"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "xlrd"
@@ -2076,8 +2261,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "xlwt"
@@ -2089,8 +2274,8 @@ python-versions = "*"
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "zipp"
@@ -2106,8 +2291,8 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "zope.event"
@@ -2123,8 +2308,8 @@ test = ["zope.testrunner"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [[package]]
 name = "zope.interface"
@@ -2141,13 +2326,13 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 
 [package.source]
 type = "legacy"
-url = "https://mirrors.tencent.com/pypi/simple"
-reference = "default"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+reference = "kingeye-pypi"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "3.6.14"
-content-hash = "eb1a4aaf1b8621415ab1aeadd6a73129982e163a24422dbaef81fa5b361b97a6"
+content-hash = "cee40233eed510045b1fc76e1b7ae6e74d9cea937678c738b95f8b670d19479d"
 
 [metadata.files]
 aiocontextvars = [
@@ -2161,6 +2346,10 @@ appnope = [
 asgiref = [
     {file = "asgiref-3.4.1-py3-none-any.whl", hash = "sha256:ffc141aa908e6f175673e7b1b3b7af4fdb0ecb738fc5c8b88f69f055c2415214"},
     {file = "asgiref-3.4.1.tar.gz", hash = "sha256:4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9"},
+]
+async-timeout = [
+    {file = "async-timeout-4.0.2.tar.gz", hash = "sha256:2163e1640ddb52b7a8c80d0a67a08587e5d245cc9c553a74a847056bc2976b15"},
+    {file = "async_timeout-4.0.2-py3-none-any.whl", hash = "sha256:8ca1e4fcf50d07413d66d1a5e416e42cfdf5851c981d679a09851a6853383b3c"},
 ]
 atomicwrites = [
     {file = "atomicwrites-1.4.0-py2.py3-none-any.whl", hash = "sha256:6d1784dea7c0c8d4a5172b6c620f40b6e4cbfdf96d783691f2e1302a7b88e197"},
@@ -2345,6 +2534,10 @@ cryptography = [
 curlify = [
     {file = "curlify-2.2.1.tar.gz", hash = "sha256:0d3f02e7235faf952de8ef45ef469845196d30632d5838bcd5aee217726ddd6d"},
 ]
+cw-cornerstone = [
+    {file = "cw_cornerstone-0.5.8-py3-none-any.whl", hash = "md5:d7e1b579f5ec40020305ab4e91365264"},
+    {file = "cw_cornerstone-0.5.8.tar.gz", hash = "md5:e43912c22b59833c27b2f0652448b148"},
+]
 dacite = [
     {file = "dacite-1.8.1-py3-none-any.whl", hash = "sha256:cc31ad6fdea1f49962ea42db9421772afe01ac5442380d9a99fcf3d188c61afe"},
 ]
@@ -2360,6 +2553,10 @@ deprecated = [
     {file = "Deprecated-1.2.13-py2.py3-none-any.whl", hash = "sha256:64756e3e14c8c5eea9795d93c524551432a0be75629f8f29e67ab8caf076c76d"},
     {file = "Deprecated-1.2.13.tar.gz", hash = "sha256:43ac5335da90c31c24ba028af536a91d41d53f9e6901ddb021bcc572ce44e38d"},
 ]
+dj-database-url = [
+    {file = "dj_database_url-2.2.0-py3-none-any.whl", hash = "sha256:3e792567b0aa9a4884860af05fe2aa4968071ad351e033b6db632f97ac6db9de"},
+    {file = "dj_database_url-2.2.0.tar.gz", hash = "sha256:9f9b05058ddf888f1e6f840048b8d705ff9395e3b52a07165daa3d8b9360551b"},
+]
 dj-static = [
     {file = "dj-static-0.0.6.tar.gz", hash = "sha256:032ec1c532617922e6e3e956d504a6fb1acce4fc1c7c94612d0fda21828ce8ef"},
 ]
@@ -2371,13 +2568,59 @@ django-braces = [
     {file = "django-braces-1.13.0.tar.gz", hash = "sha256:ba68e98b817c6f01d71d10849f359979617b3fe4cefb7f289adefddced092ddc"},
     {file = "django_braces-1.13.0-py2.py3-none-any.whl", hash = "sha256:a457d74ea29478123c0c4652272681b3cea0bf1232187fd9f9b6f1d97d32a890"},
 ]
+django-dmpython = [
+    {file = "django_dmPython-3.1.7-py3-none-any.whl", hash = "sha256:9226609f716142d037d41e9b4121526e936e9ee7f85b46b8dd6a37f1906e08a8"},
+]
 django-environ = [
     {file = "django-environ-0.8.1.tar.gz", hash = "sha256:6f0bc902b43891656b20486938cba0861dc62892784a44919170719572a534cb"},
     {file = "django_environ-0.8.1-py2.py3-none-any.whl", hash = "sha256:42593bee519a527602a467c7b682aee1a051c2597f98c45f4f4f44169ecdb6e5"},
 ]
+django-health-check = [
+    {file = "django-health-check-3.16.5.tar.gz", hash = "sha256:1edfd49293ccebbce29f9da609c407f307aee240ab799ab4201031341ae78c0f"},
+    {file = "django_health_check-3.16.5-py2.py3-none-any.whl", hash = "sha256:8d66781a0ea82b1a8b44878187b38a27370e94f18287312e39be0593e72d8983"},
+]
 django-prometheus = [
     {file = "django-prometheus-2.1.0.tar.gz", hash = "sha256:dd3f8da1399140fbef5c00d1526a23d1ade286b144281c325f8e409a781643f2"},
     {file = "django_prometheus-2.1.0-py2.py3-none-any.whl", hash = "sha256:c338d6efde1ca336e90c540b5e87afe9287d7bcc82d651a778f302b0be17a933"},
+]
+django-redis = [
+    {file = "django-redis-5.4.0.tar.gz", hash = "sha256:6a02abaa34b0fea8bf9b707d2c363ab6adc7409950b2db93602e6cb292818c42"},
+    {file = "django_redis-5.4.0-py3-none-any.whl", hash = "sha256:ebc88df7da810732e2af9987f7f426c96204bf89319df4c6da6ca9a2942edd5b"},
+]
+dmpython = [
+    {file = "dmPython-2.5.5-cp27-cp27m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:577f556367fc5724aef37d033a7fc75fad43126b941a6db1a194ec8a361cd41a"},
+    {file = "dmPython-2.5.5-cp27-cp27m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:eb6ac9acc0a4665a03e1e7b508a40efb745218e31447815f45ffa8aeb9f67775"},
+    {file = "dmPython-2.5.5-cp27-cp27m-win_amd64.whl", hash = "sha256:9692c3f39f6015923561c055e7e94e3a72785699e25ced2bf5c70a6e76c408c8"},
+    {file = "dmPython-2.5.5-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:3e265ec8f8a4c0312154b34d80968d39b7a8a22275fa280a1cf78fb8136dd640"},
+    {file = "dmPython-2.5.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a7be6f1df8026e39c3b54a524b6c16dc99d9cb78d5c1dd82354bef76abaacf28"},
+    {file = "dmPython-2.5.5-cp310-cp310-win_amd64.whl", hash = "sha256:a6b1612342943bf1ce8c51a534b7091a7c0ef33ee47b021879505146f76d9a27"},
+    {file = "dmPython-2.5.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:276fe298162dc53a5d94e170a2c7d2d4f39a6274369d4563d05914e6be4fc1cc"},
+    {file = "dmPython-2.5.5-cp311-cp311-win_amd64.whl", hash = "sha256:e0d9bce6ead4c552ed3cea255c7e23099f6be4dc852cf3954215bddb625e729b"},
+    {file = "dmPython-2.5.5-cp312-cp312-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:ff09e6dc66df120e3aa87cb4e86f407e403280500c8516cf13b255a3ed41e658"},
+    {file = "dmPython-2.5.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d32df9d43a176b22624148983ce415f7ca3bfa6e18525dc7706b5401092ad6a8"},
+    {file = "dmPython-2.5.5-cp312-cp312-win_amd64.whl", hash = "sha256:d96ead3b68aa39d1e2f4e80cf6417e564109f0a47dab7e9e94948e239bcc924d"},
+    {file = "dmPython-2.5.5-cp34-cp34m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:a20b7ee47e8b4e10db7dcf694fd639b0e3541711de36ba45d06030fb01178bbb"},
+    {file = "dmPython-2.5.5-cp34-cp34m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7524eaeea1e8b3364ef7b0f6774f4c1a00a89fefcbed05fa8acfaedac82a63fc"},
+    {file = "dmPython-2.5.5-cp35-cp35m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:04291fc5ed47f1cec43a1e7b1172d7b69ff4956fafcf1af508283aa478505e56"},
+    {file = "dmPython-2.5.5-cp35-cp35m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e0bcb2e81e5c4b04c62ca53a4253c07e33c91cff3080c2c032e45fefb189f11d"},
+    {file = "dmPython-2.5.5-cp36-cp36m-linux_aarch64.whl", hash = "md5:e62dfc371ef20a3f796e6199f233b16b"},
+    {file = "dmPython-2.5.5-cp36-cp36m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:ff6a43c09cddcda1100e67a29388d84ea2d350931e6604e837c4f7ce5f785f31"},
+    {file = "dmPython-2.5.5-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0883f914e1b3716618afdf325b9246a29d2368727c9a3d764e085de1e15de1b2"},
+    {file = "dmPython-2.5.5-cp36-cp36m-win_amd64.whl", hash = "md5:359ae5489f05d2712bb8282b12bbaf8e"},
+    {file = "dmPython-2.5.5-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:9b786f03bbd0df0fe3053035ccb466d41d6b660bcea82824f21b3c677a9683d0"},
+    {file = "dmPython-2.5.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7fb7caeecaf9ec8de57ae33e0c4cea24f0c583c46594ca37ee287c656596427e"},
+    {file = "dmPython-2.5.5-cp37-cp37m-win_amd64.whl", hash = "sha256:f0511a213d643b4eddcd5b419f2a4e9a5728fdb65eeeb1986728d6b812584a0a"},
+    {file = "dmPython-2.5.5-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:597c0b2af48e4407fdfabdeb53719483ec6c2a625198d5acea8f069879b2cf1c"},
+    {file = "dmPython-2.5.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a2d09057793a966ba01c3bcf621b9128a49b3c89e10c77f8e9241e56c198ff22"},
+    {file = "dmPython-2.5.5-cp38-cp38-win_amd64.whl", hash = "sha256:1a40c10c4a5db03a2455cfe31127f1596c005e205a85e4e1c2aa9d5e426f1a58"},
+    {file = "dmPython-2.5.5-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:ed0b742aee6c65300c194619dfda7b4f68cc4e0f668a65cca6e94ff97d9ebfcf"},
+    {file = "dmPython-2.5.5-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f14944cade247bdee8ac99652fc5083fc4996ee31045c43c50e6a62b408359b5"},
+    {file = "dmPython-2.5.5-cp39-cp39-win_amd64.whl", hash = "sha256:cf021b6468d7b619b37234cb2114b395c325af0a724ed56dd0596e6313d92262"},
+    {file = "dmPython-2.5.5.tar.gz", hash = "md5:e5f746a27b187f51fc2a1b9c457622b6"},
+]
+elasticsearch = [
+    {file = "elasticsearch-7.17.9-py2.py3-none-any.whl", hash = "sha256:0e2454645dc00517dee4c6de3863411a9c5f1955d013c5fefa29123dadc92f98"},
+    {file = "elasticsearch-7.17.9.tar.gz", hash = "sha256:66c4ece2adfe7cc120e2b6a6798a1fd5c777aecf82eec39bb95cef7cfc7ea2b3"},
 ]
 flake8 = [
     {file = "flake8-4.0.1-py2.py3-none-any.whl", hash = "sha256:479b1304f72536a55948cb40a32dce8bb0ffe3501e26eaf292c7e60eb5e0428d"},
@@ -2641,6 +2884,10 @@ isort = [
 jedi = [
     {file = "jedi-0.17.2-py2.py3-none-any.whl", hash = "sha256:98cc583fa0f2f8304968199b01b6b4b94f469a1f4a74c1560506ca2a211378b5"},
     {file = "jedi-0.17.2.tar.gz", hash = "sha256:86ed7d9b750603e4ba582ea8edc678657fb4007894a12bcf6f4bb97892f31d20"},
+]
+kafka-python = [
+    {file = "kafka-python-2.0.2.tar.gz", hash = "sha256:04dfe7fea2b63726cd6f3e79a2d86e709d608d74406638c5da33a01d45a9d7e3"},
+    {file = "kafka_python-2.0.2-py2.py3-none-any.whl", hash = "sha256:2d92418c7cb1c298fa6c7f0fb3519b520d0d7526ac6cb7ae2a4fc65a51a94b6e"},
 ]
 mccabe = [
     {file = "mccabe-0.6.1-py2.py3-none-any.whl", hash = "sha256:ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42"},
@@ -3013,6 +3260,10 @@ pywin32 = [
     {file = "pywin32-306-cp38-cp38-win_amd64.whl", hash = "sha256:e8ac1ae3601bee6ca9f7cb4b5363bf1c0badb935ef243c4733ff9a393b1690c0"},
     {file = "pywin32-306-cp39-cp39-win32.whl", hash = "sha256:e25fd5b485b55ac9c057f67d94bc203f3f6595078d1fb3b458c9c28b7153a802"},
     {file = "pywin32-306-cp39-cp39-win_amd64.whl", hash = "sha256:39b61c15272833b5c329a2989999dcae836b1eed650252ab1b7bfbe1d59f30f4"},
+]
+redis = [
+    {file = "redis-4.3.6-py3-none-any.whl", hash = "sha256:1ea4018b8b5d8a13837f0f1c418959c90bfde0a605cb689e8070cff368a3b177"},
+    {file = "redis-4.3.6.tar.gz", hash = "sha256:7a462714dcbf7b1ad1acd81f2862b653cc8535cdfc879e28bf4947140797f948"},
 ]
 requests = [
     {file = "requests-2.27.1-py2.py3-none-any.whl", hash = "sha256:f22fa1e554c9ddfd16e6e41ac79759e17be9e492b3587efa038054674760e72d"},

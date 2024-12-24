@@ -27,6 +27,8 @@ werkzeug = "2.0.3"
 rsa = "4.9"
 bk-iam = "1.3.4"
 pycryptodome = "^3.20.0"
+dmpython = "^2.5.5"
+django-dmpython = "^3.1.7"
 opentelemetry-instrumentation-django = "0.27b0"
 opentelemetry-instrumentation-dbapi = "0.27b0"
 opentelemetry-instrumentation-redis = "0.27b0"
@@ -39,6 +41,7 @@ opentelemetry-exporter-otlp = "1.8.0"
 opentelemetry-exporter-jaeger = "1.8.0"
 PyJWT = "2.4.0"
 concurrent-log-handler = "^0.9.25"
+cw-cornerstone = "^0.5.8"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.15.0"
@@ -57,5 +60,11 @@ pytest-cov = "^2.8.1"
 mypy = "^v0.910"
 
 [[tool.poetry.source]]
+name = "kingeye-pypi"
+url = "https://bkrepo.cwoa.net/pypi/aiops/kingeye-pypi/simple"
+
+[[tool.poetry.source]]
 name = "default"
 url = "https://mirrors.tencent.com/pypi/simple/"
+default = true
+

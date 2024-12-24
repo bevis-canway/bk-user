@@ -22,7 +22,8 @@ class ProfileStatus(AutoNameEnum):
     DISABLED = auto()
     EXPIRED = auto()
 
-    _choices_labels = ((NORMAL, "正常"), (LOCKED, "被冻结"), (DELETED, "被删除"), (DISABLED, "被禁用"), (EXPIRED, "已过期"))
+    _choices_labels = (
+        (NORMAL, "正常"), (LOCKED, "被冻结"), (DELETED, "被删除"), (DISABLED, "被禁用"), (EXPIRED, "已过期"))
 
 
 class StaffStatus(AutoNameEnum):
@@ -121,6 +122,14 @@ class TypeOfExpiration(AutoLowerEnum):
         (ACCOUNT_EXPIRATION, "账号过期"),
         (PASSWORD_EXPIRATION, "密码过期"),
     )
+
+
+class DatabaseEngine:
+    """数据库引擎"""
+
+    DAMENG_DB = "DAMENG"
+    MYSQL_DB = "MYSQL"
+    OCEANBASE_DB = "OCEANBASE"
 
 
 PASSWD_RESET_VIA_SAAS_EMAIL_TMPL = "您的蓝鲸账号【{username}】的密码已被重置，若非本人操作，请及时修改"

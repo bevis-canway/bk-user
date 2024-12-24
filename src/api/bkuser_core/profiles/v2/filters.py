@@ -33,7 +33,10 @@ class ProfileSearchFilter(AdvancedSearchFilter):
         exact_lookups, fuzzy_lookups = query_data.get("exact_lookups"), query_data.get("fuzzy_lookups")
         # default_domain = ProfileCategory.objects.get_default().domain
         default_domain = get_default_category_domain_from_local_cache()
-        condition_str = 'if(`domain`=%s, `username`, CONCAT(`username`, "@", `domain`))'
+        condition_str = """
+        if("domain"= %s,  "username", CONCAT("username", '@', "domain"))
+        """
+
         # filter by time
         queryset = queryset.filter(self.make_time_filter(query_data))
 
