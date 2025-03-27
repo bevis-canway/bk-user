@@ -200,7 +200,7 @@ class ProfileLoginViewSet(viewsets.ViewSet):
             )
             logger.exception("login check, check profile<%s> of %s failed", profile.username, message_detail)
             # NOTE: 这里不能使用其他错误, 一律是 PASSWORD_ERROR, 安全问题
-            raise error_codes.PASSWORD_ERROR_RETRY.f(retry_password_times=(int(config_loader["max_trail_times"]) - profile.bad_check_cnt - 1))
+            raise error_codes.PASSWORD_ERROR_RETRY.f(retry_password_times=(int(config_loader["max_trail_times"]) - profile.bad_check_cnt))
 
         self._check_password_status(request, profile, config_loader, time_aware_now)
         self._check_account_status(request, profile)
